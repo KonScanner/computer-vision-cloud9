@@ -1,6 +1,6 @@
 install:
-	pip install --upgrade pip --user --no-cache-dir &&\
-		pip install -r requirements.txt --user --no-cache-dir
+	pip install --upgrade pip --no-cache-dir &&\
+		pip install -r requirements.txt --no-cache-dir
 
 test:
 	# python -m pytest -vv --cov=myrepolib tests/*.py

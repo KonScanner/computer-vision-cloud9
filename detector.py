@@ -19,8 +19,9 @@ def detect(bucket,file):
             },
         },
     )
-
-    print(response)
-
+    for i in response['Labels']:
+        click.echo(click.style(f"Detection Labels:\n Name: {i['Name']}, Confidence: {i['Confidence']:.2f}",fg="green"))
+    
+    
 if __name__ == '__main__':
     detect()
